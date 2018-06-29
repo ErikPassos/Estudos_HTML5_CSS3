@@ -1,0 +1,39 @@
+
+.animate-svg{
+    width: 800px;
+    margin: 200px auto;
+    
+}
+
+.animate-svg g{
+    stroke-width: 18px;/* grossura da linha*/
+    stroke: #003365; /*Definindo a cor*/
+    width: 100%;
+    height: 100%;
+    stroke-dashoffset: 100000;/*distância das linha tracejadas entre elas*/
+    stroke-dasharray: 100000;/*deixar as linha tracejadas*/
+    animation: svganimation 15s ease-in-out forwards infinite;/*aplicando o comportamento dentro do método*/
+}
+
+
+/*Criando o comportamento da animação
+A @keyframesregra especifica o código da animação.
+ease-in-out Especifica um efeito de transição com início e fim lentos
+forward O elemento manterá os valores de estilo definidos pelo último quadro-chave (depende da direção de animação e da contagem de animação)
+
+
+
+*/
+@keyframes svganimation{
+    0%{
+        stroke-dashoffset: 100000;/*fica invisível*/
+    }
+
+    50%{
+        stroke-dashoffset: 0%;/*fica visível*/
+    }
+
+    100%{
+        stroke-dashoffset: 0%;/*fica visível*/
+    }
+}

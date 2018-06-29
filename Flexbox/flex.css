@@ -1,0 +1,84 @@
+body {
+    margin:0;
+      padding: 0;
+  }
+
+
+.main_header_menu{
+    display: flex;
+    margin: 20px auto;
+    max-width: 1300px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.main_header_menu ul{
+    display: flex;
+    
+    
+    
+
+}
+
+.main_header_menu ul li{
+    display: flex;
+    padding: 0 10px;
+   
+    
+}
+
+/*row: Este é o valor padrão, onde os itens são organizados para exibição em forma de linha da esquerda para a direita;*/
+
+
+  .container {
+      display: flex;
+      background-color:rebeccapurple;
+      margin: 15px auto 30px;
+      max-width: 500px;
+      font-family: sans-serif;
+  }
+
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.column-reverse{
+    flex-direction: column-reverse;
+}
+
+.container div{
+    background: red;
+    height: 80px;
+    font-size: 1.4em;
+    color: black;
+    /*alinhando texto ao centro*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.row div, .row-reverse div{
+    margin: 12px 6px;
+    width: 80px;
+}
+
+.column div, .column-reverse div{
+    margin: 12px;
+}
+
+h4{
+    margin: 20px 0 0 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
